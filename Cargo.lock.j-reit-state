@@ -252,6 +252,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7f202df86484c868dbad7eaa557ef785d5c66295e41b460ef922eca0723b842c"
 
 [[package]]
+name = "app"
+version = "0.1.0"
+dependencies = [
+ "actix-web",
+ "once_cell",
+ "sentry",
+ "sentry-actix",
+]
+
+[[package]]
 name = "atomic-waker"
 version = "1.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -342,16 +352,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "113b4343b5f6617e7ad401ced8de3cc8b012e73a594347c307b90db3e9271289"
 dependencies = [
  "bytes",
-]
-
-[[package]]
-name = "cargo-conservative-update-repro"
-version = "0.1.0"
-dependencies = [
- "actix-web",
- "once_cell",
- "sentry",
- "sentry-actix",
 ]
 
 [[package]]
